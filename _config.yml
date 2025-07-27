@@ -1,3 +1,10 @@
-title: My GitHub Pages Site
-description: A simple website using Markdown
+title: My First Website (Marc Seemann)
 theme: minima
+description: Experimenting with GitHub Pages and Jekyll
+markdown: kramdown
+
+# Add this line:
+sass:
+  style: compressed
+
+# Optional: add your custom CSS in layout or with <style> tags
