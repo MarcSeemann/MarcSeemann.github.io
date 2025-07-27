@@ -3,12 +3,6 @@ layout: default
 title: Home
 ---
 
-# Welcome to My Website 👋
+# Welcome to my first website 👋
 
-This is a simple GitHub Pages site using Markdown.
-
-You can add sections, links, images, or even blog posts.
-
-- ✅ It's easy to use
-- 🌐 Hosted for free on GitHub
-- ✏️ Written in Markdown!
+This is my first attempt at making a website! Wish me luck
