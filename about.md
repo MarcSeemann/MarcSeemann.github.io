@@ -6,4 +6,4 @@ permalink: /about/
 
 # About Me
 
-I'm building a cool website using GitHub Pages.
+This is my first website. I am trying to learn simple web design in my free time as another skill to learn. If you have any advice/improvements please feel free to push to this repo.
