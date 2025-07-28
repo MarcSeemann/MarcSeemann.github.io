@@ -1,6 +1,6 @@
 title: My First Website (Marc Seemann)
 description: Experimenting with GitHub Pages and Jekyll
-theme: jekyll-theme-midnight
+remote_theme: pages-themes/cayman
 markdown: kramdown
 
 sass:
