@@ -1,6 +1,42 @@
+/* Reset default margin */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: sans-serif;
-  background-color: #f9f9f9;
+  color: #fff;
+}
+
+/* Full-page background image */
+.hero {
+  background-image: url('assets/bg.jpg');  /* Add your image in the 'assets/' folder */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   padding: 2rem;
-  color: #333;
+}
+
+/* Overlay effect (optional) */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: -1;
+}
+
+/* Text inside content section */
+.content {
+  padding: 4rem 2rem;
+  background-color: #222;
+  text-align: center;
 }
