@@ -41,6 +41,15 @@ body {
   z-index: -1;
 }
 
+.overlay-box {
+  background-color: rgba(0, 0, 0, 0.6); /* Transparent black */
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  max-width: 600px;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+
 /* Text inside content section */
 .content {
   padding: 4rem 2rem;
