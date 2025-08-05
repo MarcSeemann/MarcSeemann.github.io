@@ -21,7 +21,7 @@ body {
   background-image: url('assets/background.jpg');  /* Add your image in the 'assets/' folder */
   background-size: cover;
   background-position: center;
-  height: 100%; /* Full screen height */
+  height: 100vh; /* Full screen height */
   display: flex;
   flex-direction: column;
   justify-content: center;
