@@ -18,7 +18,7 @@ body {
 
 /* Full-page background image */
 .hero {
-  background-image: url('assets/background.jpg');  /* Add your image in the 'assets/' folder */
+  background-image: url('assets/images/background.jpg');  /* Add your image in the 'assets/' folder */
   background-size: cover;
   background-position: center;
   height: 100vh; /* Full screen height */
