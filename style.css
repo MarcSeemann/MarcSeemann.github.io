@@ -40,3 +40,45 @@ body {
   background-color: #222;
   text-align: center;
 }
+
+/* Header styling */
+header {
+  background: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+  padding: 1rem 2rem;
+  position: fixed;  /* stays on top when scrolling */
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+/* Site title */
+header h1 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Nav bar links */
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #ffd700; /* gold on hover */
+}
+
+/* To avoid content being hidden under fixed header */
+main {
+  padding-top: 60px; /* height of header */
+}
+
