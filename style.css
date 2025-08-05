@@ -82,3 +82,13 @@ main {
   padding-top: 60px; /* height of header */
 }
 
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
