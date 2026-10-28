@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simulation | Marc Seemann</title>
+  <meta name="description" content="Geant4 simulation work for CIGAR and HD-DEMO: muon generator, radioactive sources and detector response.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header"></div>
+  <main>
+    <section class="hero short">
+      <div class="overlay-box">
+        <h2>Simulation</h2>
+        <p>Geant4 simulations of CIGAR and HD-DEMO, from a realistic cosmic-muon generator to radioactive source studies.</p>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="wrap">
+        <h3>What I Simulate</h3>
+        <p>For CIGAR I built the Geant4 simulation, including several particle sources: a <strong>realistic muon generator</strong>, and tests with <strong>Am-241</strong> and <strong>Na-22</strong>. For HD-DEMO I contribute to a simulation that is used to understand the detector geometry better. This is the latest thing I am working on.</p>
+        <div class="zoomable" style="margin-top:1.5rem">
+          <figure style="max-width:760px"><img src="assets/images/cigar_teflon_back_panel_hit_2_simulation.png" alt="Geant4 visualization of a particle event hitting the PTFE back panel in CIGAR"><figcaption>Geant4 event display from the CIGAR simulation: a particle hitting the PTFE back panel.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="content alt">
+      <div class="wrap">
+        <h3>Realistic Muon Generator</h3>
+        <p>Cosmic muons arrive with a characteristic angular distribution. The generator samples directions so that the simulated distributions follow the expected theory curves (red dashed lines).</p>
+        <div class="plots zoomable">
+          <figure><img src="assets/images/theta_distribution.png" alt="Theta distribution of simulated muons versus theory"><figcaption>Zenith-angle θ distribution compared with theory ∝ cos²θ sinθ.</figcaption></figure>
+          <figure><img src="assets/images/cos_theta_distribution.png" alt="cos theta distribution versus theory"><figcaption>cos θ distribution compared with theory.</figcaption></figure>
+          <figure><img src="assets/images/cos2_theta_distribution.png" alt="cos squared theta distribution versus theory"><figcaption>cos²θ distribution compared with theory.</figcaption></figure>
+          <figure><img src="assets/images/muon_flux_vs_cos2theta.png" alt="Normalised muon flux per solid angle versus cos squared theta"><figcaption>Normalized muon flux per solid angle versus cos²θ.</figcaption></figure>
+          <figure><img src="assets/images/web/muon_direction_density.jpg" data-full="assets/images/web/muon_direction_density.jpg" alt="3D plot of muon direction vectors coloured by density"><figcaption>3D muon direction vectors, coloured by local density.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="wrap">
+        <h3>Detector Response</h3>
+        <p>Energy deposited by muons in the xenon gas and in the veto panels, including a comparison between simulation and data for CIGAR.</p>
+        <div class="plots zoomable">
+          <figure><img src="assets/images/energy_deposition_sim_vs_data.png" alt="Energy deposited by muons in both vetos and xenon, simulation versus data"><figcaption>Energy deposited by muons in both vetos and xenon: simulation versus data.</figcaption></figure>
+          <figure><img src="assets/images/web/energy_deposition_histogram.jpg" alt="Histogram of energy deposited by muons in xenon gas"><figcaption>Energy deposited by muons in the xenon gas, per event.</figcaption></figure>
+          <figure><img src="assets/images/web/energy_vs_distance_2D_histogram.jpg" alt="2D histogram of energy deposited versus distance travelled in the gas"><figcaption>Energy deposited versus distance travelled in the gas (2D histogram, log scale).</figcaption></figure>
+          <figure><img src="assets/images/web/veto_hit_positions.jpg" alt="Hit positions on the top and bottom veto panels"><figcaption>Muon hit positions on the top and bottom veto panels.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="footer"></div>
+  <script src="script.js"></script>
+</body>
+</html>

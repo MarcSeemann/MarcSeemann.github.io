@@ -1,29 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>About | My Site</title>
-  <link rel="stylesheet" href="../style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Marc Seemann</title>
+  <meta name="description" content="About Marc Seemann, PhD student in particle physics at DIPC.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="header"></div>
-
   <main>
-    <section class="hero">
+    <section class="hero short">
       <div class="overlay-box">
         <h2>About Me</h2>
-        <p>I currently am doing a PhD in particle physics at the Donostia International Physics Center (DIPC) in Spain.
-        </p>
+        <p>I am doing a PhD in particle physics at the Donostia International Physics Center (DIPC) in Spain.</p>
       </div>
     </section>
 
     <section class="content">
-      <h3>More Details</h3>
-      <p>Big and small things to come!</p>
+      <div class="wrap two-col">
+        <img class="portrait" src="assets/images/marc_seemann_picture.jpg" alt="Portrait of Marc Seemann in front of a green chalkboard">
+        <div>
+          <h3>Hi, I'm Marc</h3>
+          <p>I am a PhD student in experimental particle physics at DIPC, working within the NEXT collaboration, which searches for neutrinoless double beta decay with high-pressure xenon detectors. My work sits at the crossroads of detector hardware, data analysis and simulation.</p>
+          <p>Day to day that means building prototype detectors by hand (gluing and evaporating wavelength-shifting fibers onto panels), taking data, writing software for calibration, and building Geant4 simulations that help us understand detector geometry and performance.</p>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="content alt">
+      <div class="wrap">
+        <h3>Skills &amp; Tools</h3>
+        <p>
+          <span class="tag">Geant4</span><span class="tag">C++</span><span class="tag">Python</span><span class="tag">IC (NEXT software)</span>
+          <span class="tag">Calibration software</span><span class="tag">Data taking</span><span class="tag">SiPMs</span>
+          <span class="tag">Wavelength-shifting fibers</span><span class="tag">Fiber evaporation / coating</span><span class="tag">Scintillators</span><span class="tag">Detector prototyping</span>
+        </p>
+        <h3 style="margin-top:3rem">Path so far</h3>
+        <div class="timeline">
+          <div class="item"><h4>PET scanner studies: CsI(Tl) crystal</h4><p>Tested a new CsI(Tl) crystal as a possible candidate material.</p></div>
+          <div class="item"><h4>COCOA prototype</h4><p>Combined the crystal with the Sussex tile from LiquidO for first, very basic results.</p></div>
+          <div class="item"><h4>CIGAR prototype</h4><p>Fiber gluing, evaporation, data taking and the full simulation.</p></div>
+          <div class="item"><h4>HD-DEMO (now)</h4><p>Fiber panels, calibration software and detector simulation.</p></div>
+        </div>
+        <p style="margin-top:2rem">Want the details? Head to <a href="research.html">Research</a> or <a href="publications.html">Publications</a>. Code lives on <a href="https://github.com/MarcSeemann">GitHub</a>.</p>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="wrap">
+        <h3>Beyond the Lab</h3>
+        <p>A couple of photos from outside the lab.</p>
+        <div class="gallery zoomable">
+          <figure><img src="assets/images/web/rocks.jpg" alt="Layered rock cliffs under a cloudy sky"><figcaption>Layered rock cliffs on the coast</figcaption></figure>
+          <figure><img src="assets/images/web/rocks_2.jpg" alt="Tilted rock strata meeting the sea"><figcaption>Rock strata</figcaption></figure>
+        </div>
+      </div>
     </section>
   </main>
-
   <div id="footer"></div>
-  <script src="../script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research | Marc Seemann</title>
+  <meta name="description" content="Detector prototypes and simulations: CsI(Tl), COCOA, CIGAR and HD-DEMO.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header"></div>
+  <main>
+    <section class="hero short">
+      <div class="overlay-box">
+        <h2>Research</h2>
+        <p>From a scintillating crystal to fiber-barrel prototypes for high-pressure xenon: the projects I have worked on, in order.</p>
+        <p class="small muted" style="margin-top:.8rem"><a href="#csi">CsI(Tl)</a> · <a href="#cocoa">COCOA</a> · <a href="#cigar">CIGAR</a> · <a href="#hd-demo">HD-DEMO</a></p>
+      </div>
+    </section>
+
+    <section class="project" id="csi">
+      <div class="wrap project-grid">
+        <div class="text">
+          <div class="ph"><span class="when">Project 1 · PET scanners</span><h3>CsI(Tl) crystal as a new candidate</h3></div>
+          <p>I worked on PET scanner R&amp;D, testing a new CsI(Tl) crystal as a possible candidate material. The crystal was wrapped and coupled to a SiPM, and the whole assembly made fully light-tight for measurements.</p>
+          <p>Related work: <a href="https://arxiv.org/abs/2406.13598">Cryogenic cesium iodide as a potential PET material</a> (arXiv:2406.13598).</p>
+        </div>
+        <div class="fig-stack zoomable">
+          <figure><img src="assets/images/web/CsI_Tl_crystal_wrapped.jpg" alt="Wrapped CsI(Tl) crystal on lab paper" style="aspect-ratio:4/3;object-fit:cover"><figcaption>The CsI(Tl) crystal, wrapped for testing.</figcaption></figure>
+          <figure><img src="assets/images/web/fully_encased_crystal_sipm.jpg" alt="Crystal and SiPM fully encased in black tape" style="aspect-ratio:4/3;object-fit:cover"><figcaption>Crystal and SiPM fully encased to be light-tight.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="project" id="cocoa">
+      <div class="wrap">
+        <div class="text" style="max-width:720px">
+          <div class="ph"><span class="when">Project 2 · LiquidO</span><h3>COCOA prototype</h3></div>
+          <p>I used the CsI(Tl) crystal in a prototype of COCOA, combining it with the Sussex tile from LiquidO. This gave very basic first results: seeing a cobalt source.</p>
+          <p>See the COCOA paper: <a href="https://arxiv.org/abs/2502.20916">arXiv:2502.20916</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="project" id="cigar">
+      <div class="wrap">
+        <div class="project-grid">
+          <div class="text">
+            <div class="ph"><span class="when">Project 3 · Gaseous xenon prototype</span><h3>CIGAR</h3></div>
+            <p>CIGAR is a prototype detector in which wavelength-shifting (WLS) fibers mounted on PTFE panels sit inside a gas vessel, read out by SiPMs, with a calibration LED and a Peltier cell. My responsibilities:</p>
+            <ul>
+              <li><strong>Hardware:</strong> gluing the fibers and evaporating them.</li>
+              <li><strong>Data taking</strong> with the prototype.</li>
+              <li><strong>Simulation (Geant4):</strong> a realistic muon generator and studies with Am-241 and Na-22 sources. See <a href="simulation.html">Simulation</a>.</li>
+            </ul>
+          </div>
+          <div class="fig-stack zoomable">
+            <figure><img src="assets/images/cigar_CAD.png" alt="CAD cutaway of the CIGAR detector with labelled components" style="background:#fff;padding:.5rem"><figcaption>CAD cutaway of CIGAR: WLS fibers on PTFE panels, SiPMs, Peltier cell, calibration LED, gas inlet and outlet.</figcaption></figure>
+          </div>
+        </div>
+        <div class="plots zoomable" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">
+          <figure style="background:none;padding:0"><img src="assets/images/web/cigar_inside_view_real.jpg" alt="Inside of CIGAR with fiber panel visible"><figcaption style="color:var(--muted)">Looking into CIGAR.</figcaption></figure>
+          <figure style="background:none;padding:0"><img src="assets/images/web/raw_bundled_fibers.jpg" alt="Bundled WLS fibers lit green, end-on"><figcaption style="color:var(--muted)">Bundled WLS fibers, end-on.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="project" id="hd-demo">
+      <div class="wrap">
+        <div class="project-grid flip">
+          <div class="text">
+            <div class="ph"><span class="when">Project 4 · Current</span><h3>HD-DEMO</h3></div>
+            <p>HD-DEMO is the new NEXT prototype detector, now being commissioned at DIPC. It builds on the fiber-barrel concept described in <a href="https://arxiv.org/html/2312.05567v1">Towards a fiber barrel detector for next-generation high-pressure gaseous xenon TPCs</a>, and was announced on the <a href="https://next-experiment.org/2026/07/08/hd-demo-a-new-prototype-detector-begins-commissioning-at-dipc/">NEXT website</a>. My contributions so far:</p>
+            <ul>
+              <li><strong>Fiber panels:</strong> gluing the fibers, attaching them to the panels and evaporating them.</li>
+              <li><strong>Calibration:</strong> I built a <em>calibration city</em>, a program within IC (the NEXT software framework) that allows the fibers to be calibrated.</li>
+              <li><strong>Simulation (latest work):</strong> contributing to the HD-DEMO simulation, used to understand the detector geometry further.</li>
+            </ul>
+          </div>
+          <div class="fig-stack zoomable">
+            <figure><img src="assets/images/web/HDDEMO_real_insideview.jpg" alt="Looking down the HD-DEMO barrel with fiber panels" style="aspect-ratio:4/3;object-fit:cover;object-position:center 40%"><figcaption>Inside HD-DEMO: the fiber barrel.</figcaption></figure>
+            <figure><img src="assets/images/web/pre_evaporation_fiber_panels.jpg" alt="Fiber panel in the evaporation chamber before coating" style="aspect-ratio:4/3;object-fit:cover"><figcaption>A fiber panel before evaporation.</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="footer"></div>
+  <script src="script.js"></script>
+</body>
+</html>

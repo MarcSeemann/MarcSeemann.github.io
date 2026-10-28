@@ -2,26 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Home | My Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Marc Seemann</title>
+  <meta name="description" content="Marc Seemann, PhD student in particle physics at DIPC working on detector prototypes for the NEXT experiment.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="header"></div>
+  <main>
+    <section class="hero">
+      <h2>Hello, I'm Marc</h2>
+      <p class="tagline">PhD student in particle physics at the Donostia International Physics Center (DIPC), building and simulating detectors for rare-event searches.</p>
+      <div>
+        <a class="btn" href="research.html">See my research</a>
+        <a class="btn ghost" href="about.html">About me</a>
+      </div>
+    </section>
 
-<main>
-  <section class="hero">
-    <h2>Hello, I'm Marc</h2>
-    <p>Welcome to my personal website.</p>
-  </section>
-
-  <section class="content">
-    <h3>What I Do</h3>
-    <p>I build things on the web.</p>
-  </section>
-</main>
-
+    <section class="content">
+      <div class="wrap">
+        <h3>What I Do</h3>
+        <p class="lead">I work on the hardware and the simulation side of detector R&amp;D: gluing and evaporating wavelength-shifting fibers, taking data with prototypes, writing calibration software, and building Geant4 simulations to understand what the detectors are seeing.</p>
+        <div class="cards">
+          <a class="card" href="research.html#hd-demo"><img src="assets/images/web/HDDEMO_real_insideview.jpg" alt="Inside view of the HD-DEMO detector" style="object-position:center 40%"><div class="body"><h4>HD-DEMO</h4><p>Current prototype: fiber barrel construction, calibration software and simulation.</p></div></a>
+          <a class="card" href="research.html#cigar"><img src="assets/images/web/raw_bundled_fibers.jpg" alt="Bundled wavelength-shifting fibers glowing green"><div class="body"><h4>CIGAR</h4><p>Fiber assembly, data taking and a full Geant4 simulation.</p></div></a>
+          <a class="card" href="research.html#cocoa"><img src="assets/images/web/fully_encased_crystal_sipm.jpg" alt="Light-tight CsI(Tl) crystal with SiPM"><div class="body"><h4>CsI(Tl) &amp; COCOA</h4><p>A new scintillator candidate, tested with LiquidO technology.</p></div></a>
+          <a class="card" href="simulation.html"><img src="assets/images/muon_flux_vs_cos2theta.png" alt="Simulated muon flux plot" style="object-fit:contain;background:#fff"><div class="body"><h4>Simulation</h4><p>A realistic muon generator and source studies in Geant4.</p></div></a>
+        </div>
+      </div>
+    </section>
+  </main>
   <div id="footer"></div>
-
   <script src="script.js"></script>
 </body>
 </html>
