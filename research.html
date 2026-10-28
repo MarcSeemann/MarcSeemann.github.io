@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Research | Marc Seemann</title>
-  <meta name="description" content="Detector prototypes and simulations: CsI(Tl), COCOA, CIGAR and HD-DEMO.">
+  <meta name="description" content="Detector prototypes and simulations: CsI(Tl), CIGAR, COCOA, and HD-DEMO.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,8 +13,8 @@
     <section class="hero short">
       <div class="overlay-box">
         <h2>Research</h2>
-        <p>From a scintillating crystal to fiber-barrel prototypes for high-pressure xenon: the projects I have worked on, in order.</p>
-        <p class="small muted" style="margin-top:.8rem"><a href="#csi">CsI(Tl)</a> · <a href="#cocoa">COCOA</a> · <a href="#cigar">CIGAR</a> · <a href="#hd-demo">HD-DEMO</a></p>
+        <p>From scintillating crystals to fiber-barrel prototypes for high-pressure xenon: the projects I have worked on, in order.</p>
+        <p class="small muted" style="margin-top:.8rem"><a href="#csi">CsI(Tl)</a> · <a href="#cigar">CIGAR</a> · <a href="#cocoa">COCOA</a> · <a href="#hd-demo">HD-DEMO</a></p>
       </div>
     </section>
 
@@ -22,22 +22,15 @@
       <div class="wrap project-grid">
         <div class="text">
           <div class="ph"><span class="when">Project 1 · PET scanners</span><h3>CsI(Tl) crystal as a new candidate</h3></div>
-          <p>I worked on PET scanner R&amp;D, testing a new CsI(Tl) crystal as a possible candidate material. The crystal was wrapped and coupled to a SiPM, and the whole assembly made fully light-tight for measurements.</p>
+          <p>I worked on PET scanner R&amp;D, testing a new CsI(Tl) crystal as a possible candidate material. The advantage of CsI(Tl) is their cheaper price tag, compared to
+            the comercially used LYSO crystals. The issue that CsI(Tl) brings is the poorer performance at room temperature. Our research focused on the study of CsI(Tl) at cryogenic temperatures
+            at which they become a significant option to consider, especially for larger full body PETs, which have a large fraction of their cost coming from the purchase of the LYSO crystals. </p>
+            <p>Initial testing included measurements at cryogenic temperatures and a Na-22 source to try and replicate the coincidence measurements done in PET scanners.</p>
           <p>Related work: <a href="https://arxiv.org/abs/2406.13598">Cryogenic cesium iodide as a potential PET material</a> (arXiv:2406.13598).</p>
+          <figure><img src="assets/images/CsITL_initial_testing.jpg" alt="Copper plate with central Na-22 source with two small CsI (Tl) crystals at opposite sides submerged in liquid nitrogen" style="aspect-ratio:4/3;object-fit:cover"><figcaption>The CsI(Tl) crystal, wrapped for testing.</figcaption></figure>
         </div>
         <div class="fig-stack zoomable">
-          <figure><img src="assets/images/web/CsI_Tl_crystal_wrapped.jpg" alt="Wrapped CsI(Tl) crystal on lab paper" style="aspect-ratio:4/3;object-fit:cover"><figcaption>The CsI(Tl) crystal, wrapped for testing.</figcaption></figure>
-          <figure><img src="assets/images/web/fully_encased_crystal_sipm.jpg" alt="Crystal and SiPM fully encased in black tape" style="aspect-ratio:4/3;object-fit:cover"><figcaption>Crystal and SiPM fully encased to be light-tight.</figcaption></figure>
-        </div>
-      </div>
-    </section>
 
-    <section class="project" id="cocoa">
-      <div class="wrap">
-        <div class="text" style="max-width:720px">
-          <div class="ph"><span class="when">Project 2 · LiquidO</span><h3>COCOA prototype</h3></div>
-          <p>I used the CsI(Tl) crystal in a prototype of COCOA, combining it with the Sussex tile from LiquidO. This gave very basic first results: seeing a cobalt source.</p>
-          <p>See the COCOA paper: <a href="https://arxiv.org/abs/2502.20916">arXiv:2502.20916</a>.</p>
         </div>
       </div>
     </section>
@@ -46,13 +39,16 @@
       <div class="wrap">
         <div class="project-grid">
           <div class="text">
-            <div class="ph"><span class="when">Project 3 · Gaseous xenon prototype</span><h3>CIGAR</h3></div>
+            <div class="ph"><span class="when">Project 2 · Gaseous xenon prototype</span><h3>CIGAR</h3></div>
             <p>CIGAR is a prototype detector in which wavelength-shifting (WLS) fibers mounted on PTFE panels sit inside a gas vessel, read out by SiPMs, with a calibration LED and a Peltier cell. My responsibilities:</p>
             <ul>
               <li><strong>Hardware:</strong> gluing the fibers and evaporating them.</li>
               <li><strong>Data taking</strong> with the prototype.</li>
               <li><strong>Simulation (Geant4):</strong> a realistic muon generator and studies with Am-241 and Na-22 sources. See <a href="simulation.html">Simulation</a>.</li>
             </ul>
+            <p>The goal of this prototype was proving the capability of the fibers working as an effective light collection system. The current problem that many neutrinoless double beta decay
+            experiments face are the intrinsic radioactivity of the photosensors themselves. This can be omitted by using optical fibers for collecting the photons produced during physical processes and guiding them
+            towards the photosensors, which can now be kept outside the active part of the detector.</p>
           </div>
           <div class="fig-stack zoomable">
             <figure><img src="assets/images/cigar_CAD.png" alt="CAD cutaway of the CIGAR detector with labelled components" style="background:#fff;padding:.5rem"><figcaption>CAD cutaway of CIGAR: WLS fibers on PTFE panels, SiPMs, Peltier cell, calibration LED, gas inlet and outlet.</figcaption></figure>
@@ -60,7 +56,21 @@
         </div>
         <div class="plots zoomable" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">
           <figure style="background:none;padding:0"><img src="assets/images/web/cigar_inside_view_real.jpg" alt="Inside of CIGAR with fiber panel visible"><figcaption style="color:var(--muted)">Looking into CIGAR.</figcaption></figure>
-          <figure style="background:none;padding:0"><img src="assets/images/web/raw_bundled_fibers.jpg" alt="Bundled WLS fibers lit green, end-on"><figcaption style="color:var(--muted)">Bundled WLS fibers, end-on.</figcaption></figure>
+          <figure style="background:none;padding:0"><img src="assets/images/web/raw_bundled_fibers.jpg" alt="Bundled WLS fibers before assembly"><figcaption style="color:var(--muted)">Bundled WLS fibers before assembly.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="project" id="cocoa">
+      <div class="wrap">
+        <div class="text" style="max-width:720px">
+          <div class="ph"><span class="when">Project 3 · LiquidO</span><h3>COCOA prototype</h3></div>
+          <p>Using the previous experience with the CsI(Tl) crystal, a new prototype COCOA was suggested that is meant as a Compton camera. It is a new approach to try and detect high energy gamma rays (at MeV energies)
+          from astrophysical processes. It consists of the Sussex tile from the liquidO collaboration, consisting of optical fibers running through an opaque scintillator medium, in combination with our CsI(Tl) crystals.
+          The Sussex tile allows for positional reconstruction scattering gamma rays, while the crystal is used as an absorber for energy reconstruction. I successfully managed to take intial results with a Cs-137 and a Co-60 source.</p>
+          <p>See the COCOA paper: <a href="https://arxiv.org/abs/2502.20916">arXiv:2502.20916</a>.</p>
+          <figure><img src="assets/images/web/CsI_Tl_crystal_wrapped.jpg" alt="Wrapped CsI(Tl) crystal on lab paper" style="aspect-ratio:4/3;object-fit:cover"><figcaption>The CsI(Tl) crystal, wrapped for testing.</figcaption></figure>
+          <figure><img src="assets/images/web/fully_encased_crystal_sipm.jpg" alt="Crystal and SiPM fully encased in black tape" style="aspect-ratio:4/3;object-fit:cover"><figcaption>Crystal and SiPM fully encased to be light-tight.</figcaption></figure>
         </div>
       </div>
     </section>
